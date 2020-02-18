@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import UserInput from './Components/UserInput'
+import AllOutput from './Components/AllOutput'
 import './App.css';
 
 class App extends Component {
+  
+  state = {
+    userInput : ''
+  };
+
+  userInputChangeHandler = (event) => {
+    this.setState({
+      userInput: event.target.value
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <UserInput changed={this.userInputChangeHandler} />
+        <AllOutput toView={this.state.userInput} />
       </div>
     );
   }
