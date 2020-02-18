@@ -18,8 +18,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <UserInput changed={this.userInputChangeHandler} />
-        <AllOutput toView={this.state.userInput} />
+        <table><tbody><tr>
+          <td><UserInput changed={this.userInputChangeHandler} /></td>
+          <td><AllOutput toView={this.state.userInput} /></td>
+        </tr></tbody></table>
       </div>
     );
   }

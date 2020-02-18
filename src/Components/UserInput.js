@@ -3,7 +3,10 @@ import React from 'react';
 const userInput = (props) => {
 
     return (
-        <input type="text" onChange={props.changed} />
+        <div className="InputComponentStyle" >
+            <p>Enter Whatever you want</p>
+            <input type="text" onChange={props.changed} />
+        </div>
     );
 }
 

@@ -1,0 +1,32 @@
+.OutputComponentStyle {
+    margin: 16px auto;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 3px #cccccc;
+    padding: 16px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+.largeFont {
+    font-size: larger;
+}
+
+.AllOutputComponentStyle {
+    margin: 16px auto;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 3px #cccccc;
+    padding: 16px;
+    text-align: center;
+}
+
+.InputComponentStyle {
+    margin: 16px auto;
+    border: 1px solid indigo;
+    box-shadow: 0 2px 3px violet;
+    padding: 16px;
+    text-align: center;
+}
+

@@ -1,10 +1,14 @@
 import React from 'react';
+import './Components.css';
 
-const userOutput = (props) => {
+const Output = (props) => {
 
     return (
-        <p>{props.toView}</p>
+        <div className="OutputComponentStyle">
+            <p>{props.jobDescription}</p>
+            <p className={props.font}>{props.toView}</p>
+        </div>
     );
 }
 
-export default userOutput;
+export default Output;

@@ -1,4 +1,11 @@
 .App {
-  text-align: center;
+  text-align: center; 
 }
 
+table {
+  margin:auto; 
+}
+
+td {
+  padding: 10px;
+}
